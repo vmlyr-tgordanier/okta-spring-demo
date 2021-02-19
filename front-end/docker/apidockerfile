@@ -1,0 +1,13 @@
+# build from the Ubuntu 18.04 image
+FROM ubuntu:18.04
+
+# installing API Server
+RUN apt-get update && apt-get install -y wget software-properties-common apt-transport-https openjdk-8-jdk
+RUN mkdir /var/opt/java
+RUN mkdir /var/opt/java/src
+
+# quirk that needs to be removed..
+RUN mkdir /.gradle
+
+# starting API Server
+CMD tail -f /dev/null

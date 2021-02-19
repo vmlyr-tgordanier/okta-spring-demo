@@ -1,0 +1,5 @@
+
+server.port=8001
+okta.oauth2.issuer=https://dev-XXXXXXXX.okta.com/oauth2/default
+okta.oauth2.client-id=XXXXXXXXXXXXXXXX
+okta.api.baseUrl=http://localhost:8000

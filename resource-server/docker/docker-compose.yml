@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+    okta_api_server:
+        build: 
+          context: .
+          dockerfile: apidockerfile
+        ports:  
+          - "8000:8000"
+        volumes: 
+          - okta_api:/var/opt/java/
+        networks:
+          - okta
+networks:
+  okta:
+    external: true
+volumes:
+  okta_api:
